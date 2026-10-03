@@ -3,132 +3,77 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4f1e8" />
-    <meta
-      name="description"
-      content="Evo-learning：沿着问题、限制与新能力，重新走一遍知识长出来的路径。三个实践项目，展示这种学习方法如何落地。"
-    />
-    <title>Evo-learning — 让知识重新长出来</title>
+    <meta name="theme-color" content="#090e17" />
+    <meta name="description" content="Evo-learning：在 AI 能快速生成答案的时代，沿着问题、限制与新能力，重新理解知识如何生长。三个真实项目，展示演进式学习。" />
+    <title>Evo-learning — 知识，不止于答案</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Evo-learning 首页">
-        <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span>evo<span class="wordmark-light">·</span>learning</span>
-      </a>
-      <nav aria-label="主导航">
-        <a href="#method">学习方法</a>
-        <a href="#projects">实践项目</a>
-        <a class="nav-link" href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="Evo-learning 首页"><span class="brand-glyph">e<span>↗</span></span><span>evo-learning<small>KNOWLEDGE, IN MOTION</small></span></a>
+      <nav aria-label="主导航"><a href="#method">方法</a><a href="#projects">实践项目</a><a class="nav-github" href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></nav>
     </header>
 
     <main id="top">
       <section class="hero wrap">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> A way to learn complex things</p>
-          <h1>别从答案开始<br /><em>让知识重新长出来</em></h1>
-          <p class="hero-lede">Evo-learning 是一种演进式学习方法：从真实的问题出发，沿着旧方法的边界，一步步走到新概念出现的地方。</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#projects">看看它如何实践 <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="https://github.com/xiaoheng008/evolutionary-learning/blob/master/evo-learn/SKILL.md" target="_blank" rel="noreferrer">阅读方法说明 <span aria-hidden="true">↗</span></a>
+          <div class="system-label"><span class="live-dot"></span> AN AI-ERA LEARNING FRAMEWORK <span class="label-index">01 / 03</span></div>
+          <h1>AI 让答案更快<br /><span>理解仍要亲自生长</span></h1>
+          <p class="hero-lede">Evo-learning 把知识从结论重新展开成一条可追踪的路径：问题如何出现，旧方法为何受限，新概念又怎样带来能力。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">探索三个实践 <span>↗</span></a><a class="button button-quiet" href="https://github.com/xiaoheng008/evolutionary-learning/blob/master/evo-learn/SKILL.md" target="_blank" rel="noreferrer">打开学习协议 <span>↗</span></a></div>
+          <div class="hero-principle"><span class="principle-icon">✳</span><span>AI 可以给出答案，学习要看见答案之间的因果。</span></div>
+        </div>
+
+        <figure class="knowledge-map" aria-label="从问题到新能力的知识关系图">
+          <div class="map-topline"><span><i></i> KNOWLEDGE GRAPH</span><span>EVOLUTION / 001</span></div>
+          <div class="map-canvas">
+            <svg class="graph-lines" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="pathGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53dfc1"/><stop offset="1" stop-color="#a58aff"/></linearGradient></defs>
+              <path class="graph-edge edge-muted" d="M105 95 C190 95 192 165 270 190"/><path class="graph-edge edge-active" d="M270 190 C342 145 368 88 472 91"/><path class="graph-edge edge-muted" d="M270 190 C348 215 354 321 470 328"/><path class="graph-edge edge-muted" d="M105 95 C150 247 179 325 292 345"/><path class="graph-edge edge-muted" d="M292 345 C370 343 395 328 470 328"/><path class="graph-edge edge-muted" d="M472 91 C499 168 505 252 470 328"/>
+            </svg>
+            <div class="graph-node node-problem"><small>START / 01</small><strong>问题</strong><span>想解决什么？</span></div>
+            <div class="graph-node node-limit"><small>PRESSURE / 02</small><strong>限制</strong><span>旧办法到边界</span></div>
+            <div class="graph-node node-discovery"><small>INSIGHT / 03</small><strong>发现</strong><span>新的观察方式</span></div>
+            <div class="graph-node node-capability"><small>CAPABILITY / 04</small><strong>新能力</strong><span>可以做到什么？</span></div>
+            <div class="graph-center"><span class="center-orbit"></span><span class="center-core">因果<br />链</span><span class="center-caption">LEARNING<br />AS EVOLUTION</span></div>
+            <div class="graph-token token-a">existing method</div><div class="graph-token token-b">new abstraction</div><div class="graph-cross">+</div>
           </div>
-          <div class="hero-note"><span class="note-rule"></span><span>不是把知识讲简单，而是把它的来路重新展开。</span></div>
-        </div>
-        <div class="hero-art" aria-label="知识从问题逐步演进为新能力的示意图">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-center"><span>问题</span><b>→</b><span>能力</span></div>
-          <div class="art-node node-a"><small>01</small><span>困境</span></div>
-          <div class="art-node node-b"><small>02</small><span>发现</span></div>
-          <div class="art-node node-c"><small>03</small><span>抽象</span></div>
-          <div class="art-node node-d"><small>04</small><span>新问题</span></div>
-          <div class="art-caption">KNOWLEDGE, UNFOLDED</div>
-          <svg class="art-spark" viewBox="0 0 72 72" fill="none" aria-hidden="true"><path d="M36 2v68M2 36h68M12 12l48 48M60 12 12 60" stroke="currentColor" stroke-width="1"/><circle cx="36" cy="36" r="8" fill="currentColor"/></svg>
-        </div>
-        <div class="hero-index"><span>01</span><span class="index-line"></span><span>04</span></div>
+          <figcaption><span>图谱视图</span><span class="legend"><i></i> 因果连接 <b></b> 待探索分支</span></figcaption>
+        </figure>
+        <div class="hero-foot"><span>从知道一个概念</span><b>→</b><span>到理解它为何出现</span><span class="foot-right">SCROLL TO EXPLORE <i>↓</i></span></div>
       </section>
 
       <section class="method-section" id="method">
-        <div class="wrap method-layout">
-          <div class="section-intro">
-            <p class="eyebrow">THE METHOD / 01</p>
-            <h2>概念不是清单，<br />而是一次次<em>能力跃迁。</em></h2>
-            <p>成熟的教材把知识压缩成章节和术语。Evo-learning 把它重新展开成一条因果链：每个新概念都回应着旧方法无法解决的问题。</p>
-            <a class="text-link" href="https://github.com/xiaoheng008/evolutionary-learning/blob/master/evo-learn/SKILL.md" target="_blank" rel="noreferrer">了解完整学习协议 <span aria-hidden="true">↗</span></a>
+        <div class="wrap">
+          <div class="section-heading"><div><p class="eyebrow">01 — THE LEARNING LOOP</p><h2>把知识变成一条<br /><span>可以走过的路径</span></h2></div><p class="section-aside">不是把教材切成更小的块，而是补回每个概念之间的因果关系。</p></div>
+          <div class="learning-loop">
+            <article class="loop-step"><span class="loop-number">01</span><span class="loop-symbol symbol-question">?</span><h3>提出问题</h3><p>目标是什么？现有知识能做到哪一步？</p><small>QUESTION</small></article>
+            <div class="loop-connector"><span></span><b>›</b></div>
+            <article class="loop-step"><span class="loop-number">02</span><span class="loop-symbol symbol-limit">⌁</span><h3>遇见限制</h3><p>旧方法在哪个具体情形下失效？</p><small>LIMIT</small></article>
+            <div class="loop-connector"><span></span><b>›</b></div>
+            <article class="loop-step"><span class="loop-number">03</span><span class="loop-symbol symbol-insight">◈</span><h3>发现新抽象</h3><p>怎样的新视角，能解释并跨过边界？</p><small>ABSTRACTION</small></article>
+            <div class="loop-connector"><span></span><b>›</b></div>
+            <article class="loop-step loop-step-highlight"><span class="loop-number">04</span><span class="loop-symbol symbol-capability">↗</span><h3>获得新能力</h3><p>验证、重建，再去解决下一个问题。</p><small>NEW CAPABILITY</small></article>
           </div>
-          <div class="evolution-list">
-            <div class="evolution-row"><span class="step-no">01</span><div><strong>遇到问题</strong><small>我们想完成什么？</small></div><span class="step-mark">↘</span></div>
-            <div class="evolution-row"><span class="step-no">02</span><div><strong>用已有办法尝试</strong><small>当前能力能走多远？</small></div><span class="step-mark">↘</span></div>
-            <div class="evolution-row"><span class="step-no">03</span><div><strong>撞上边界</strong><small>什么情况让旧办法失效？</small></div><span class="step-mark">↘</span></div>
-            <div class="evolution-row"><span class="step-no">04</span><div><strong>发现新的抽象</strong><small>怎样的想法能越过限制？</small></div><span class="step-mark">↘</span></div>
-            <div class="evolution-row evolution-final"><span class="step-no">05</span><div><strong>获得新能力，再提出新问题</strong><small>继续沿着问题向前生长</small></div><span class="step-mark">↗</span></div>
-          </div>
+          <div class="loop-caption"><span>每一轮学习，都是下一轮探索的起点。</span><span>PROBLEM <i>→</i> CAPABILITY <i>→</i> NEW PROBLEM</span></div>
         </div>
       </section>
 
       <section class="projects-section wrap" id="projects">
-        <div class="projects-heading">
-          <div>
-            <p class="eyebrow">THREE PRACTICES / 02</p>
-            <h2>同一种方法，<em>三种知识地形。</em></h2>
-          </div>
-          <p>从数学结构到数据库，再到交易系统：不从术语目录开始，而从问题如何逼出下一种能力开始。</p>
-        </div>
-
+        <div class="section-heading projects-heading"><div><p class="eyebrow">02 — FIELD NOTES / THREE PRACTICES</p><h2>同一套方法，<span>三种知识地形</span></h2></div><p class="section-aside">数学、基础设施、金融系统。每个项目都从一个真实问题开始，逐层搭起理解。</p></div>
         <div class="project-grid">
-          <article class="project-card project-database">
-            <div class="card-top"><span class="project-number">01 / SYSTEMS</span><span class="card-icon icon-stack" aria-hidden="true"><i></i><i></i><i></i></span></div>
-            <p class="project-kicker">数据库系统</p>
-            <h3>从单机内核<br />到分布式一致性</h3>
-            <p class="project-desc">从文件与存储页出发，逐步推导索引、查询执行、事务恢复、并发控制与 MVCC，再走向复制、共识和 TiDB。</p>
-            <div class="path-label">LEARNING PATH</div>
-            <div class="mini-path"><span>存储</span><b>→</b><span>事务</span><b>→</b><span>分布式</span></div>
-            <a class="card-link" href="https://github.com/xiaoheng008/ddia" target="_blank" rel="noreferrer">查看项目 <span aria-hidden="true">↗</span></a>
-          </article>
-
-          <article class="project-card project-futures">
-            <div class="card-top"><span class="project-number">02 / ENGINEERING</span><span class="card-icon icon-pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
-            <p class="project-kicker">合约交易所核心系统</p>
-            <h3>从一笔委托<br />到风险闭环</h3>
-            <p class="project-desc">从合约规格与订单校验开始，沿着撮合、账本、保证金、价格参考和强平，理解一个核心系统怎样形成完整闭环。</p>
-            <div class="path-label">LEARNING PATH</div>
-            <div class="mini-path"><span>委托</span><b>→</b><span>撮合</span><b>→</b><span>风险</span></div>
-            <div class="status-note"><span></span>第 1–9 章初稿，技术审校中</div>
-            <a class="card-link" href="https://github.com/xiaoheng008/futures" target="_blank" rel="noreferrer">查看项目 <span aria-hidden="true">↗</span></a>
-          </article>
-
-          <article class="project-card project-algebra">
-            <div class="card-top"><span class="project-number">03 / MATHEMATICS</span><span class="card-icon icon-axes" aria-hidden="true"><i></i><i></i></span></div>
-            <p class="project-kicker">线性代数</p>
-            <h3>从方程的困境<br />到空间与变换</h3>
-            <p class="project-desc">从一组方程开始，追问旧办法在哪里失去伸缩性，再亲手重建向量、矩阵、空间与线性变换。</p>
-            <div class="path-label">LEARNING PATH</div>
-            <div class="mini-path"><span>方程</span><b>→</b><span>空间</span><b>→</b><span>变换</span></div>
-            <div class="project-tools"><span>INTERACTIVE NOTEBOOKS</span><span>↗</span></div>
-            <a class="card-link" href="https://github.com/xiaoheng008/linear-algebra-evolution" target="_blank" rel="noreferrer">查看项目 <span aria-hidden="true">↗</span></a>
-          </article>
+          <article class="project-card card-database"><div class="project-meta"><span>FIELD 01 / SYSTEMS</span><span class="card-symbol">▤</span></div><p class="project-domain">DATABASE SYSTEMS</p><h3>数据库系统</h3><h4>从单机内核到分布式一致性</h4><p class="project-desc">从文件与存储页出发，推导索引、查询执行、事务恢复、并发控制与 MVCC，再走向复制、共识和 TiDB。</p><div class="capability-label">EVOLUTION PATH</div><div class="project-path"><span>存储</span><i>→</i><span>事务</span><i>→</i><span>复制与共识</span></div><a class="project-link" href="https://github.com/xiaoheng008/ddia" target="_blank" rel="noreferrer">进入项目图谱 <b>↗</b></a></article>
+          <article class="project-card card-futures"><div class="project-meta"><span>FIELD 02 / ENGINEERING</span><span class="card-symbol">⌁</span></div><p class="project-domain">EXCHANGE CORE</p><h3>合约交易所核心系统</h3><h4>从一笔委托到风险闭环</h4><p class="project-desc">沿着合约规格、订单校验、撮合、账本、保证金、价格参考与强平，重建核心系统如何闭环。</p><div class="capability-label">EVOLUTION PATH</div><div class="project-path"><span>委托</span><i>→</i><span>撮合与账本</span><i>→</i><span>风险控制</span></div><div class="project-status"><i></i> 第 1–9 章初稿 · 技术审校中</div><a class="project-link" href="https://github.com/xiaoheng008/futures" target="_blank" rel="noreferrer">进入项目图谱 <b>↗</b></a></article>
+          <article class="project-card card-algebra"><div class="project-meta"><span>FIELD 03 / MATHEMATICS</span><span class="card-symbol">⟋</span></div><p class="project-domain">LINEAR ALGEBRA</p><h3>线性代数</h3><h4>从方程困境到空间与变换</h4><p class="project-desc">从一组方程开始，观察旧办法如何失去伸缩性，再重建向量、矩阵、空间与线性变换。</p><div class="capability-label">EVOLUTION PATH</div><div class="project-path"><span>方程组</span><i>→</i><span>向量空间</span><i>→</i><span>线性变换</span></div><div class="project-status notebook-status"><i></i> 配套可交互 Notebook 实验</div><a class="project-link" href="https://github.com/xiaoheng008/linear-algebra-evolution" target="_blank" rel="noreferrer">进入项目图谱 <b>↗</b></a></article>
         </div>
       </section>
 
-      <section class="closing-band">
-        <div class="wrap closing-inner">
-          <span class="closing-symbol" aria-hidden="true">∿</span>
-          <div><p class="eyebrow">KEEP FOLLOWING THE QUESTION</p><h2>理解一门学科，<br /><em>从看见它为什么出现开始。</em></h2></div>
-          <a class="button button-light" href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">关注项目 <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
+      <section class="closing-section"><div class="wrap closing-inner"><div class="closing-orb"><span>e</span><i></i></div><div><p class="eyebrow">A BETTER QUESTION IS A BETTER INTERFACE</p><h2>让 AI 帮你探索<br /><span>让理解成为自己的</span></h2></div><a class="button button-primary" href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">从方法开始 <b>↗</b></a></div></section>
     </main>
 
-    <footer class="site-footer wrap">
-      <a class="wordmark footer-mark" href="#top"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>evo<span class="wordmark-light">·</span>learning</span></a>
-      <span>让知识重新长出来。</span>
-      <a href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      <small>© 2026 Xiaoheng</small>
-    </footer>
+    <footer class="site-footer wrap"><a class="brand" href="#top"><span class="brand-glyph">e<span>↗</span></span><span>evo-learning<small>KNOWLEDGE, IN MOTION</small></span></a><span>知识，不止于答案。</span><a href="https://github.com/xiaoheng008/evolutionary-learning" target="_blank" rel="noreferrer">GitHub ↗</a><small>© 2026 Xiaoheng</small></footer>
   </body>
 </html>
