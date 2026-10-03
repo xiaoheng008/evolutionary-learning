@@ -1,6 +1,6 @@
 ---
 name: evo-learn
-description: Build and teach complex subjects through an evolutionary learning path: reconstruct the sequence of problems, limitations, discoveries, abstractions, and new capabilities that cause concepts to emerge, then turn that path into an interactive curriculum with experiments, verification, and reconstruction tasks.
+description: 'Build and teach complex subjects through an evolutionary learning path: reconstruct the sequence of problems, limitations, discoveries, abstractions, and new capabilities that cause concepts to emerge, then turn that path into an interactive curriculum with experiments, verification, and reconstruction tasks.'
 ---
 
 # Evolutionary Learning
@@ -349,7 +349,28 @@ Continue.
 
 ---
 
-# 7. Chapter Protocol
+# 7. Publish as an Online Ebook
+
+When the user wants a reusable, browsable online book, use Hugo with the OINK theme unless the user has chosen another platform or the project has a strong existing constraint. OINK supplies book navigation and reading features; the evolutionary pedagogy still has to be authored into the content.
+
+Map the learning design into the site deliberately:
+
+- The home page should show the causal learning path, not just a list of chapters or generic feature cards. Distinguish completed material from planned stages.
+- Use the book's content tree for reading order and hierarchy. Give chapters problem-oriented titles, and make the transition visible: prior capability → pressure or limitation → discovery → new capability → next problem.
+- Keep a roadmap or evolution map that explains why each capability makes the next question possible. A table of contents alone is not an evolutionary map.
+- Put supporting experiments and reconstruction exercises next to the concept chain they verify; do not let the website's navigation flatten them into unrelated resources.
+
+For Hugo/OINK projects:
+
+- Pin the OINK Go module and Hugo Extended version; commit `go.mod` and `go.sum` so local and hosted builds resolve the same theme.
+- Follow the installed OINK version's book-content conventions and official starter/docs rather than assuming front matter or shortcode syntax from another version.
+- Configure Goldmark passthrough for the math delimiters used in the manuscript. Verify generated HTML contains rendered KaTeX/MathML, not literal TeX, and check at least one inline and one display formula.
+- Run a strict production build with path warnings treated as errors before deployment. Configure GitHub Pages for Actions when using a Pages workflow, then confirm the workflow's deploy job succeeds; a successful static build alone does not prove the site is published.
+- Keep generated output out of source control unless the user's project explicitly requires checked-in output.
+
+The OINK/Hugo choice is a publishing implementation, not part of the learning theory. Do not introduce a site generator, hosting configuration, or deployment changes when the user only asked for a curriculum or manuscript.
+
+# 8. Chapter Protocol
 
 Each chapter should use the following structure when appropriate:
 
@@ -403,7 +424,7 @@ Do not mechanically force every section into every chapter. Preserve the causal 
 
 ---
 
-# 8. Do Not Leak Future Concepts
+# 9. Do Not Leak Future Concepts
 
 Do not reveal the conceptual destination before the learner has encountered the pressure that motivates it.
 
@@ -425,7 +446,7 @@ Principle:
 
 ---
 
-# 9. Mathematical and Factual Rigor
+# 10. Mathematical and Factual Rigor
 
 Evolutionary presentation must not reduce rigor.
 
@@ -454,7 +475,7 @@ Never present a constructed conceptual sequence as literal historical fact.
 
 ---
 
-# 10. Experiments
+# 11. Experiments
 
 Use experiments whenever they reveal a structure better than prose.
 
@@ -496,7 +517,7 @@ Experiments should be reproducible whenever practical.
 
 ---
 
-# 11. Verification
+# 12. Verification
 
 Do not verify learning through recall alone.
 
@@ -539,7 +560,7 @@ Prioritize reconstruction because it tests structural understanding.
 
 ---
 
-# 12. Hint Policy
+# 13. Hint Policy
 
 When the learner is stuck, do not immediately provide the complete solution.
 
@@ -581,7 +602,7 @@ The objective is:
 
 ---
 
-# 13. Learning State
+# 14. Learning State
 
 When running an interactive course, track learning by concept rather than only by chapter completion.
 
@@ -623,7 +644,7 @@ If reconstruction repeatedly fails, revisit the conceptual pressure and earlier 
 
 ---
 
-# 14. Periodic Reconstruction
+# 15. Periodic Reconstruction
 
 After several chapters, stop normal progression.
 
@@ -662,7 +683,7 @@ The learner should be able to reconstruct **relationships**, not merely names.
 
 ---
 
-# 15. Final Reconstruction Mode
+# 16. Final Reconstruction Mode
 
 After completing a substantial domain, stop teaching chapter-by-chapter.
 
